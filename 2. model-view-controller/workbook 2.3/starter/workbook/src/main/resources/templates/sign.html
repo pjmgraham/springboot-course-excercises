@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Traffic Sign</title>
+    </head>
+    <body>
+      <h1 th:text="'Speed: ' + ${speed}"></h1>
+      <img th:if="${speed < 50}" src="https://firebasestorage.googleapis.com/v0/b/learnthepart-75aed.appspot.com/o/images%2Fa85d2b78-0201-4818-a1b7-d304dfe31738?alt=media&token=01983d45-31be-4358-9c0c-c0baa69ebbd6" width="200">
+      <img th:unless="${speed < 50}" src="https://firebasestorage.googleapis.com/v0/b/learnthepart-75aed.appspot.com/o/images%2F21722841-17b5-4488-b9d4-912d91637493?alt=media&token=053f22d3-2acb-4696-b1c5-eb0a7e0a1fde" width="200">
+    </body>
+</html>
